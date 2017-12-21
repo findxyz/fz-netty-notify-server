@@ -1,9 +1,9 @@
-package xyz.fz.netty.notifyServer.runner;
+package xyz.fz.netty.notify.runner;
 
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import xyz.fz.netty.notifyServer.server.NotifyServer;
+import xyz.fz.netty.notify.server.NotifyServer;
 
 @Component
 public class NotifyServerRunner implements CommandLineRunner {

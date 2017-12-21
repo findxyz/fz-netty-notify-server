@@ -1,9 +1,9 @@
-package xyz.fz.netty.notifyServer.util;
+package xyz.fz.netty.notify.util;
 
 import io.netty.channel.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.fz.netty.notifyServer.model.NotifyMessage;
+import xyz.fz.netty.notify.model.NotifyMessage;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

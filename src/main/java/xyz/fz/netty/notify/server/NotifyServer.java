@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer.server;
+package xyz.fz.netty.notify.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
@@ -16,10 +16,10 @@ import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.fz.netty.notifyServer.handler.IdleTriggerHandler;
-import xyz.fz.netty.notifyServer.handler.NotifyServerHandler;
+import xyz.fz.netty.notify.handler.IdleTriggerHandler;
+import xyz.fz.netty.notify.handler.NotifyServerHandler;
 
-import static xyz.fz.netty.notifyServer.util.Constants.DELIMITER_BYTES;
+import static xyz.fz.netty.notify.util.Constants.DELIMITER_BYTES;
 
 public class NotifyServer {
 

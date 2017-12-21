@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer.handler;
+package xyz.fz.netty.notify.handler;
 
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -6,9 +6,9 @@ import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.fz.netty.notifyServer.model.NotifyMessage;
-import xyz.fz.netty.notifyServer.util.BaseUtil;
-import xyz.fz.netty.notifyServer.util.NettyChannelHelper;
+import xyz.fz.netty.notify.model.NotifyMessage;
+import xyz.fz.netty.notify.util.BaseUtil;
+import xyz.fz.netty.notify.util.NettyChannelHelper;
 
 public class IdleTriggerHandler extends ChannelDuplexHandler {
 

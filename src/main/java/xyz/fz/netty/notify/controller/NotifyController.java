@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer.controller;
+package xyz.fz.netty.notify.controller;
 
 import io.netty.channel.Channel;
 import org.apache.commons.lang.StringUtils;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import xyz.fz.netty.notifyServer.model.NotifyMessage;
-import xyz.fz.netty.notifyServer.util.BaseUtil;
-import xyz.fz.netty.notifyServer.util.NettyChannelHelper;
+import xyz.fz.netty.notify.model.NotifyMessage;
+import xyz.fz.netty.notify.util.BaseUtil;
+import xyz.fz.netty.notify.util.NettyChannelHelper;
 
 import java.util.HashMap;
 import java.util.Map;

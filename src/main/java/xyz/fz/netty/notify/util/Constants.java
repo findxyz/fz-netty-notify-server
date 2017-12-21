@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer.util;
+package xyz.fz.netty.notify.util;
 
 public class Constants {
 

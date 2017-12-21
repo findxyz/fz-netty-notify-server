@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer;
+package xyz.fz.netty.notify;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

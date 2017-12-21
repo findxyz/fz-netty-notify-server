@@ -1,4 +1,4 @@
-package xyz.fz.netty.notifyServer.util;
+package xyz.fz.netty.notify.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
-import static xyz.fz.netty.notifyServer.util.Constants.DELIMITER_STR;
+import static xyz.fz.netty.notify.util.Constants.DELIMITER_STR;
 
 public class BaseUtil {
 
