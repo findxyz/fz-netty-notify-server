@@ -42,4 +42,17 @@ public class NotifyController {
         }
         return result;
     }
+
+    @RequestMapping(value = "/all", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> pushAll(@RequestBody Map<String, Object> data) {
+        Map<String, Object> result = new HashMap<>();
+        for (Map.Entry<String, Channel> entry : NettyChannelHelper.map().entrySet()) {
+            Channel channel = entry.getValue();
+            NotifyMessage message = new NotifyMessage.Builder().message().data(data).build();
+            channel.writeAndFlush(BaseUtil.toDelimiterJson(message));
+        }
+        result.put("success", true);
+        return result;
+    }
 }
