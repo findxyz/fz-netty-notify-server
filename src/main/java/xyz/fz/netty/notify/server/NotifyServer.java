@@ -38,13 +38,13 @@ public class NotifyServer {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
+            ByteBuf delimiter = Unpooled.copiedBuffer(DELIMITER_BYTES);
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception {
-                            ByteBuf delimiter = Unpooled.copiedBuffer(DELIMITER_BYTES);
                             ch.pipeline().addLast(new IdleStateHandler(60, 55, 0));
                             ch.pipeline().addLast(new IdleTriggerHandler());
                             ch.pipeline().addLast(new DelimiterBasedFrameDecoder(8192, delimiter));
